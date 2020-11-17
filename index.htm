@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- title -->
+    <title>Github Repo</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+   <nav>
+     <!-- navbar item 1 -->
+     <div class="nav-flex-item" id="icons">
+        <i id="hamburger" onclick="handleHamburger()" class="fas fa-align-justify fa-2x" aria-hidden="true"></i>
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+        <div class="bell-sm">
+         <i style="position: relative;" class="far fa-bell fa-2x" aria-hidden="true"></i>
+         <span class="notification"></span>
+        </div>
+      </div>
+      <!-- navbar item 2 -->
+      <div id="nav-items" class="nav-flex-item d-nav-none">
+        <!-- nav list items -->
+        <ul class="nav-ul">
+          <li> <input type="text" class="nav-search" placeholder="Search or jump to..."/> </li>
+          <hr/>
+          <li class="d-md-none"><a href="#">Dashboard</a></li>
+          <hr/>
+          <li><a href="#">Pull Requests</a></li>
+          <hr>
+          <li><a href="#">Issues</a></li>
+          <hr>
+          <li><a href="#">Codespaces</a></li>
+          <hr>
+          <li><a href="#">Marketplace</a></li>
+          <hr>
+          <li><a href="#">Explore</a></li>
+          <hr>
+          <li class="d-md-none"><a href="#">devphenom</a></li>
+          <hr>
+          <li class="d-md-none"><a href="#"> <i class="fas fa-sign-out-alt    "></i> Sign out</a></li>
+        </ul>
+      </div>
+      <!-- navbar item 3 -->
+      <div id="md-nav-item" class="nav-flex-item">
+        <div class="bell" style="margin: 5px;">
+          <i class="far fa-bell fa-2x" aria-hidden="true"></i>
+          <span class="notification"></span>
+        </div>
+        <span style="margin: 5px;">
+          <i class="fas fa-plus" aria-hidden="true"></i>
+          <i class="fas fa-sort-down"></i>
+        </span>
+        <div style="margin: 5px; display: flex; align-items: center;">
+          <img src="" alt="" id="nav-img">
+          <i class="fas fa-sort-down"></i>
+        </div>
+      </div>
+   </nav>
+   <!-- end of navbar -->
+   <section id="main">
+    <header>
+      <div style="position: relative">
+        <img id="profile-pic" class="image" alt="profile-picture">
+        <div id="home">&#127968; <span id="home-text">Work from home</span></div>
+      </div>
+      <div id="user-data">
+      </div>
+      <p style="color: black" id="bio"></p>
+    </header>
+    <section id="main-area">
+      <div id="horizontal-nav">
+        <a href="#"> <i class="fas fa-book-open github-icons"></i> Overview</a>
+        <a href="#"  class="active">
+          <img class="github-icons" src="https://img.icons8.com/ios-glyphs/30/000000/repository.png"/>
+          Repositories 
+          <span class="repo-count">0</span> </a>
+        <a href="#"> <i class="fas fa-chart-bar github-icons"></i> Projects</a>
+        <a href="#"> <i class="fa fa-cube github-icons" aria-hidden="true"></i> Packages</a>
+      </div>
+      <section id="repo-section">
+        <input type="text" class="repo-search" placeholder="Find a repository..."/>
+        <hr/>
+        <p class="result-p"><span style="font-weight: bold;" class="repo-count">0</span> results for <span style="font-weight: bold;">public</span> repository</p>
+        <hr/>
+        <div id="repos">
+          <div class="repo">
+            <div>
+              <a href="" class="repo-name">Fed</a>
+              <p class="repo-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ratione!</p>
+              <div class="repo-addons">
+                  <i class="fas fa-code-branch"></i>
+                <span class="js-color"></span>
+                <p>Javascript</p>
+                <div style="margin: auto 5px;"><i class="far fa-star" aria-hidden="true"></i> 20</div>
+                <p>Updated on Dec 1</p>
+              </div>
+            </div>
+            <div class="star"> <i class="far fa-star" aria-hidden="true"></i> Star</div>
+          </div>
+        </div>
+      </section>
+    </section>
+   </section>
+    <!-- my scripts -->
+    <script src="./js/script.js"></script>
+    <script src="./js/navbar.js"></script>
+
+  </body>
+</html>

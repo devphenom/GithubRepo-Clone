@@ -1,0 +1,18 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+}

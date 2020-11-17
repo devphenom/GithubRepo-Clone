@@ -1,0 +1,128 @@
+nav {
+  font-size: 12px !important;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 8px 20px !important;
+  margin: 0;
+  background-color: #24292e;
+}
+#icons {
+  display: flex;
+  margin: 10px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+nav .far,
+nav .fas,
+nav .fab {
+  color: white;
+}
+
+.notification {
+  position: absolute;
+  right: 22px;
+  /* top: 10px; */
+  border: 3px solid #24292e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto 2px;
+  background-color: #2585f5;
+}
+#nav-img {
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/* nav items */
+.nav-ul {
+  margin: 10px;
+  width: 100%;
+  padding: 0;
+}
+.nav-search {
+  width: 90%;
+  height: 30px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: transparent !important;
+  color: white;
+}
+input[type="text"]::placeholder {
+  color: gray;
+}
+
+.nav-ul li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0 !important;
+}
+.nav-ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.nav-ul hr {
+  border: 1px solid gray;
+}
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  nav {
+    flex-flow: row;
+    align-items: center;
+    padding: 3px 10px !important;
+  }
+  #hamburger {
+    display: none;
+  }
+  .bell {
+    position: relative;
+  }
+  .bell-sm {
+    display: none;
+  }
+  .notification {
+    position: absolute;
+    right: -5px;
+    border: 2px solid #24292e;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: auto 2px;
+    background-color: #2585f5;
+  }
+  #nav-items {
+    flex-grow: 1;
+  }
+  .nav-ul {
+    display: flex;
+    align-items: center;
+  }
+  .nav-ul li {
+    padding: 5px 10px;
+  }
+  .nav-ul li a {
+    color: white;
+    font-weight: 300;
+  }
+  nav hr {
+    display: none;
+  }
+  #md-nav-item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 767px) {
+  .d-nav-none {
+    display: none;
+  }
+  #md-nav-item {
+    display: none;
+  }
+}
